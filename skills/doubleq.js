@@ -4,13 +4,17 @@ module.exports = function (controller) {
 
         bot.startConversation(message, function (err, convo) {
             convo.say('Welcome to the kebab store!');
-
+            var response1;
             convo.ask('What would you like on your kebab?', function (response, convo) {
-                convo.ask('What else would you like on your kebab?', function (response2, convo) {
-                    convo.say("Here you go, one kebab with " + response.text + " and " + response2.text + ". Enjoy!");
-                    convo.next();
-                });
+                convo.say("Here you go, one kebab with " + response.text);
+                      console.log("Done saying first thing");
+                response1.text = response.text;
+                convo.next();
+                      
             });
+            console.log("Try to say sometoidfgnbhkj");
+            convo.say("TEST " + response1.text);
+            
         });
 
     });
