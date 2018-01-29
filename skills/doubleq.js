@@ -12,7 +12,7 @@ module.exports = function (controller) {
                       console.log("point2");
                 convo.say("Here you go, one kebab with " + response.text);
                       console.log("Done saying first thing");
-                response1.text = response.text;
+                response1 = response;
                 convo.next();
                       
             });
