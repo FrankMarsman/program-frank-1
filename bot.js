@@ -8,7 +8,9 @@
 //
 
 // Load environment variables from project .env file
+console.log("Loading env file");
 require('node-env-file')(__dirname + '/.env');
+console.log("Done loading env file");
 
 if (!process.env.SPARK_TOKEN) {
     console.log("Could not start as bots require a Cisco Spark API access token.");
