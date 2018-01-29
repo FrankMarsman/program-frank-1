@@ -18,9 +18,10 @@ module.exports = function (controller) {
                 convo.next();
                       
             });
-            //console.log("Try to say sometoidfgnbhkj");
-            //convo.say("TEST " + response1.text);
-            convo.next();
+                              
+                              console.log("Try to say sometoidfgnbhkj");
+                              convo.say("TEST " + this.response1.text);
+                              convo.next();
         });
 
     });
