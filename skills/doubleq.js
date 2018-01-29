@@ -6,8 +6,10 @@ module.exports = function (controller) {
             convo.say('Welcome to the kebab store!');
 
             convo.ask('What would you like on your kebab?', function (response, convo) {
-                convo.say("Here you go, one kebab with " + response.text + ". Enjoy!");
-                convo.next();
+                convo.ask('What else would you like on your kebab?', function (response2, convo) {
+                    convo.say("Here you go, one kebab with " + response.text + " and " + response2.text + ". Enjoy!");
+                    convo.next();
+                });
             });
         });
 
