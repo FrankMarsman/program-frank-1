@@ -12,7 +12,8 @@ module.exports = function (controller) {
               console.log("point2");
               convo.say("Here you go, one kebab with " + response.text);
               console.log("Done saying first thing");
-              response1 = response;
+              this.response1 = response;
+                      console.log("Done copying  repsonse");
               console.log("Done copying  repsonse" + this.response1.text);
                 convo.next();
                       
