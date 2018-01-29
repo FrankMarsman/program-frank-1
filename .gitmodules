@@ -1,0 +1,3 @@
+[submodule "botkit-template-frank"]
+	path = botkit-template-frank
+	url = https://github.com/CiscoDevNet/botkit-template
