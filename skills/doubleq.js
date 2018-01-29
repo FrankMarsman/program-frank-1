@@ -13,6 +13,7 @@ module.exports = function (controller) {
                 convo.say("Here you go, one kebab with " + response.text);
                       console.log("Done saying first thing");
                 response1 = response;
+                      console.log("Done copying  repsonse");
                 convo.next();
                       
             });
