@@ -9,11 +9,11 @@ module.exports = function (controller) {
             
                               console.log("poitn1");
             convo.ask('What would you like on your kebab?', function (response, convo) {
-                      console.log("point2");
-                convo.say("Here you go, one kebab with " + response.text);
-                      console.log("Done saying first thing");
-                response1 = response;
-                      console.log("Done copying  repsonse");
+            console.log("point2");
+            convo.say("Here you go, one kebab with " + response.text);
+            console.log("Done saying first thing");
+            response1 = response;
+            console.log("Done copying  repsonse" + this.response1.text);
                 
                       
             });
