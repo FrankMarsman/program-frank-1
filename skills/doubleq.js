@@ -7,6 +7,7 @@ module.exports = function (controller) {
             convo.say('Welcome to the kebab store!');
             convo.ask('What would you like on your kebab?', function (response, convo) {
                 convo.say("Here's your kebab with " + response.text);
+                      convo.reply(message,{text: 'Hello', markdown: '*Hello!*'});
                 convo.next();
                       
             });
